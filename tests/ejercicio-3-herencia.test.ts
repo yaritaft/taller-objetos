@@ -18,6 +18,7 @@ describe("Ingeniero", () => {
       datosIngeniero.edad,
       datosIngeniero.matricula
     );
+    // METODO NO DEFINIDO EN INGENIERO PERO AÚN ASI PUEDE RESOLVERLO
     expect(persona.saludar()).toBe(
       `Hola, soy ${datosIngeniero.nombre} y tengo ${datosIngeniero.edad} años.`
     );
@@ -49,6 +50,7 @@ describe("Ingeniero Sobreescrito", () => {
     expect(persona.saludar()).toBe(
       `Hola, soy ${datosIngeniero.nombre} y tengo ${datosIngeniero.edad} años.`
     );
+    // METODO ÚNICAMENTE DEFINIDO EN LA SUBCLASE
     expect(persona.saludarProfesionalmente()).toBe(
       `Hola, soy el Ingeniero ${datosIngeniero.nombre} y tengo ${datosIngeniero.edad} años. Mi numero de matricula es ${datosIngeniero.matricula}`
     );
