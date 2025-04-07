@@ -1,69 +1,18 @@
 // COMPOSICIÓN
 export class Persona {
-  constructor(public nombre: string, private edad: number) {}
-
-  saludar(): string {
-    return `Hola, soy ${this.nombre} y tengo ${this.edad} años.`;
-  }
-
-  getEdad(): number {
-    return this.edad;
-  }
+  // TU CÓDIGO VA AQUI, NO MODIFIQUES EL NOMBRE DEL ARCHIVO
+  // NI TAMPOCO LOS TESTS NI TAMPOCO EL NOMBRE DE LA CLASE
+  // PORQUE NO FUNCIONARÁ
 }
 
 export class Ingeniero {
-  static profesion = "Ingeniero";
-  costoPorHora = 45;
-
-  constructor(
-    public matricula: number,
-    private horasTrabajadas: number,
-    public persona: Persona
-  ) {}
-
-  saludar(): string {
-    return `Hola, soy el ${Ingeniero.profesion} ${
-      this.persona.nombre // PIEZA CLAVE DE LA COMPOSICION
-    } y tengo ${this.persona.getEdad()} años. Mi numero de matricula es ${
-      this.matricula
-    }`;
-  }
-
-  calcularSueldo(): number {
-    return this.horasTrabajadas * this.costoPorHora;
-  }
+  // TU CÓDIGO VA AQUI, NO MODIFIQUES EL NOMBRE DEL ARCHIVO
+  // NI TAMPOCO LOS TESTS NI TAMPOCO EL NOMBRE DE LA CLASE
+  // PORQUE NO FUNCIONARÁ
 }
 
 export class Youtuber {
-  profesion = "Youtuber";
-  gananciaPorSeguidor = 5;
-
-  constructor(
-    public canalYoutube: string,
-    public seguidores: number,
-    public persona: Persona
-  ) {}
-
-  saludar(): string {
-    return `Hola, soy el ${this.profesion} ${
-      this.persona.nombre
-    } y tengo ${this.persona.getEdad()} años. Mi canal de YouTube es ${
-      this.canalYoutube
-    }`;
-  }
-
-  calcularSueldo(): number {
-    return this.seguidores * this.gananciaPorSeguidor;
-  }
+  // TU CÓDIGO VA AQUI, NO MODIFIQUES EL NOMBRE DEL ARCHIVO
+  // NI TAMPOCO LOS TESTS NI TAMPOCO EL NOMBRE DE LA CLASE
+  // PORQUE NO FUNCIONARÁ
 }
-
-const persona = new Persona("Yari", 30);
-const persona2 = new Persona("Ariel", 31);
-const ingeniero = new Ingeniero(3344, 40, persona);
-const youtuber = new Youtuber("Yari", 30, persona);
-
-// Reasignacion de persona
-console.log(ingeniero.saludar());
-// Reasignacion de persona
-ingeniero.persona = persona2;
-console.log(ingeniero.saludar());
